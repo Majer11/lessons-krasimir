@@ -1,3 +1,24 @@
+""" 
+Shopping
+"""
+item1 = input()
+item2 = input()
+item1_price = float(input())
+item2_price = float(input())
+item1_quantity = int(input())
+item2_quantity = int(input())
+shipping_costs = 10
+
+item1_cost = item1_price * item1_quantity
+item2_cost = item2_price * item2_quantity
+total_cost = item1_cost + item2_cost + shipping_costs
+
+if total_cost >= 100:
+    shipping_costs = 0
+    print(f"You will receive free shipping. Your total cost is {total_cost}lv.")
+else:
+    print(f"Your total cost is {total_cost}lv.")
+
 """
 Daily time
 """
