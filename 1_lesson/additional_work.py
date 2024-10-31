@@ -40,9 +40,11 @@ correct_pass = "Lsss"
 
 user_pass = input("Please enter your password: ")
 
-if user_pass == input():
-    print("You don't enter nothing. Please enter your password: ")
-elif user_pass == correct_pass:
+if not user_pass:
+    print("You didn't enter anything. Please enter your password: ")
+    user_pass = input()
+
+if user_pass == correct_pass:
     print("Correct password")
 else:
     print("Incorrect password")
